@@ -13,8 +13,9 @@
     align-items: center;
     max-width: 1440px;
     min-height: 50px;
-    background-color: aqua;
+    background-color: rgb(255, 253, 255);
     padding:30px 0px;
+    background-image: url('./images/Group\ 14.png');
 }
 .nav-container ul{
     display: flex;
@@ -34,8 +35,9 @@
     font-weight: 500;
 }
 .block{
-    border:1px solid black;
+    border:none;
     padding:5px;
+    background-color: antiquewhite;
 }
 .banner-heading{
     color: #0B0223;
@@ -152,27 +154,222 @@
     font-weight: 700;
     
 }
+.games-title{
+    color: #0B0223;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top:80px;
+    margin-bottom:10px;
+    
+}
+.second{
+    font-size: 31px;
+    text-transform: none;  
+}
+.card{
+    max-width:250px;
+    /* border:1px solid black; */
+    border-radius: 5px;
+}
+.card-img{
+    width:100%;
+}
+.card-desc{
+    color:#534C64;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    
+}
+.card-container{
+    display:flex;
+    max-width:80%;
+    margin:0 auto;
+    gap:15px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    
+}
+.exclusive{
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+    /* background-blend-mode: overlay; */
+     
+}
 
+.rider-title-color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 38px;
+    font-weight: 700;
+}
+.rider-title{
+   font-size: 38px;
+   font-weight: 700;
+   
+}
+.rider-img-container{
+    max-width: 400px;
+}
+.rider-img{
+    width:100%;
+}
+.rider-container{
+    display: flex;
+    max-width:70%;
+    margin:0 auto;
+    gap: 150px;
+    /* margin-bottom: 100px; */
+}
+.rider-content{
+   
+    max-width:70%;
 
+}
+.hablo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic-cont{
+    max-width:220px;
+    /* display: flex; */
+    position:absolute;
+    /* justify-content: center; */
+    margin-top: -150px;
+    margin-left: -100px;
 
+}
+.pic{
+    width:100%;
+}
+.icon-section{
+    margin-top: 100px;
+    background-color: rgb(250, 238, 238);
+}
 
+.button{
+    /* border:1px solid black; */
+    width:240px;
+    height:80px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    width: max-content;
+    background-color: #FFF;
+    border-radius: 50px;
+    padding: 2px;
+}
+.btn-design{
+    max-width:80%;
+    margin:0px auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-row-gap:20px;
+    padding-bottom: 50px;
+    padding-top:50px;
+}
+.footer-section{
+   height: 500px;
+    background-color: #0B0223;
+   
+}
+.container{
+    display:flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    flex-direction: row-reverse;
+    
+}
+.footer-title{
+    color:white;
+}
+.stories{
+    color:white;
+    font-size: 1em;
+}
+.stories-container{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.icons-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 40px 0;
+}
+.policy-container{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
 @media  screen and (max-width:576px) {
     .nav-container{
         flex-direction: column;
         gap:20px;
+       
     }
     
     .nav-container ul{
         flex-direction: column;
         gap:20px;
+       
     }
     .banner-container{
        flex-direction: column-reverse;
        gap: 20px;
+       background-image: url('./images/Group\ 14.png');
     }
     .banner-content{
         border:none;
         padding: 30px;
-        background-image: url('./images/Group\ 14.png');
+        
+    }
+    .gammer-container{
+        flex-direction: column;
+    }
+    .gammer-img-container{
+       min-width:100%;
+    }
+    .gammer-content{
+        min-width:100%;
+        text-align: center;
+    }
+    .gammer-desc,.gammer-purpose{
+        text-align: center;
+    }
+    .card-container{
+        flex-direction: column-reverse;
+        min-width: 90%;
+    }
+    .card{
+        min-width: 320px;
+    }
+    .rider-container{
+        flex-direction: column;
+    }
+    .pic-cont{
+        max-width: 155px;
+        margin-left: -59px;
+    }
+    .rider-title-color,.rider-title{
+        display: inline;
+    }
+    .btn-design{
+        min-width: 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .stories-container{
+        flex-wrap: wrap;
+        gap:25px;
+    }
+    .policy-container{
+        flex-wrap: wrap;
+        gap:13px;
     }
 }
